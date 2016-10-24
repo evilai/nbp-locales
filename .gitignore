@@ -18,9 +18,6 @@ Icon?
 __
 /.idea/
 .sass-cache
-lib
-dist
-lib
 /dump.rdb
 **/*.map
 *.gypi

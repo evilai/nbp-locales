@@ -2,9 +2,10 @@
   "name": "nbp-locales",
   "version": "0.0.1",
   "description": "Locales helpers for Node.js Bot Platform",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel ./src/index.js --preset babel-preset-es2015 --out-file ./dist/index.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/evilai/nbp-locales#readme",
   "devDependencies": {
+    "eslint-config-evilai": "^0.0.1",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
     "babel-polyfill": "^6.16.0",
